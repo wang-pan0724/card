@@ -1,0 +1,122 @@
+.contact{
+	padding-bottom: 2.63333333rem;
+	background: white;
+  width: 100%;
+  margin: 0;
+}
+
+.contactImg{
+  position: relative;
+  width: 100%;
+  height: 275rpx;
+}
+.contactImg> image{
+	width: 750rpx;
+  height: 275rpx;
+}
+.backImg{
+  position: relative;
+  width: 100%;
+  height: 130px;
+}
+
+.contact_us{
+  position: absolute;
+  z-index: 99;
+  width: 56%;
+  height: 56%;
+  left: 23%;
+  top:23%;
+}
+
+.location{
+	padding:0 .26666667rem;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 14px;
+  text-align: left;
+  color: #555555;
+  font-weight: bold;
+}
+
+.location image{
+	vertical-align: middle;
+  height: 45rpx;
+  width: 40rpx;
+}
+
+.location span{
+	vertical-align: middle;
+  margin-left: 5px;
+}
+
+.contact_intro{
+  padding: 30rpx;
+  line-height: 45rpx;
+  color: #555555;
+  font-size: 13px;
+}
+
+.advTitle{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.advantage{
+  padding: 30rpx 30rpx 50rpx 30rpx;
+  line-height: 40rpx;
+  color: #555555;
+}
+
+.advantage ul{
+  padding: 0px;
+}
+
+.advantage ul li{
+  list-style: none;
+  margin-top: 40rpx;
+  line-height: 25px;
+  color: #555555;
+  display:block;
+
+}
+
+.advantage p{
+  line-height: 22px;
+  color: #555555;
+  font-size: 13px;
+  display: block;
+}
+
+
+.call-us{
+  position: fixed;
+  bottom: 18px;
+  width: 435rpx;
+  height: 105rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0px 10px rgba(221, 50, 30,0.6);
+  background:rgb(220,50,39);
+  line-height: 105rpx;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.call-us image{
+	vertical-align: middle;
+  width: 45rpx;
+  height: 40rpx;
+}
+.call-us span a{
+	color:white;
+}
+.call-us span{
+	vertical-align: middle;
+  margin-left: 10px;
+  font-size: 18px;
+  height: 49px;
+  line-height: 49px;
+  color: #ffffff;
+}

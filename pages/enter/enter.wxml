@@ -1,0 +1,7 @@
+<view class="container">
+<!-- 搜索优惠券-->
+  <view class='search'>
+    <input placeholder="搜索优惠券" focus="{{focus}}"/>
+  </view>
+  商家入驻
+</view>

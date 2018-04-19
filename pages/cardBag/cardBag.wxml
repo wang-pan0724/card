@@ -1,0 +1,93 @@
+<view class='container'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">待使用</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已使用</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">已过期</view>
+  </view>
+
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item>
+      <view wx:if="{{hasData}}">
+        <view>
+          <view class="list" wx:for="{{favourable}}" wx:key="{{index}}">
+            <view class='float-left shopImg'>
+              <image src="../../images/pic-sifang.png"></image>
+            </view>
+            <view class="float-left youhui-intr">
+              <view class='name'>{{item.shopName}}</view>
+              <view class="limit">{{item.promptInfo}}</view>
+              <view class="beizhu">备注：{{item.remarkInfo}}</view>
+            </view>
+            <view class="float-right list-buy" style='background: url(../../images/red.png)'>
+              <view class="price">￥{{item.cardPrice}}</view>
+              <view class="tobuy" bindtap="modalinput">兑换码</view>
+            </view>
+            <view class='float-left uestime'>有效期：2018-04-03~2018-05-01</view>
+          </view>
+        </view>
+      </view>
+      <block wx:else>
+        <image class='empty' src='../../images/empty.png'></image>
+        <view class='emptyFont'>您没有待使用的卡券</view>
+      </block>
+
+      <modal hidden="{{hiddenmodalput}}" confirmText="" cancel-text="" bindcancel="cancel">
+        <view>
+          <view class='kaquanma'>
+          <image class='kaquanma' src='../../images/erweima.png'></image>
+          </view>
+          <view class='kaquanmaNum'>5437-8152-6047</view>
+        </view>
+      </modal>
+    </swiper-item>
+    <swiper-item>
+      <view wx:if="{{hasData}}">
+        <view>
+          <view class="list" wx:for="{{favourable}}" wx:key="{{index}}">
+            <view class='float-left shopImg'>
+              <image src="../../images/pic-sifang.png"></image>
+            </view>
+            <view class="float-left youhui-intr">
+              <view class='name'>{{item.shopName}}</view>
+              <view class="limit">{{item.promptInfo}}</view>
+              <view class="beizhu">备注：{{item.remarkInfo}}</view>
+            </view>
+            <view class="float-right list-buy" style='background: url(../../images/slive.png)'>
+              <view class="price">￥{{item.cardPrice}}</view>
+              <view class="tobuy">已使用</view>
+            </view>
+            <view class='float-left uestime'>有效期：2018-04-03~2018-05-01</view>
+          </view>
+        </view>
+      </view>
+      <block wx:else>
+        <image class='empty' src='../../images/empty.png'></image>
+        <view class='emptyFont'>您没已待使用的卡券</view>
+      </block>
+    </swiper-item>
+    <swiper-item>
+      <view wx:if="{{false}}">
+        <view>
+          <view class="list" wx:for="{{favourable}}" wx:key="{{index}}">
+            <view class='float-left shopImg'>
+              <image src="../../images/pic-sifang.png"></image>
+            </view>
+            <view class="float-left youhui-intr">
+              <view class='name'>{{item.shopName}}</view>
+              <view class="limit">{{item.promptInfo}}</view>
+            </view>
+            <view class="float-right list-buy" style='background: url(../../images/slive.png)'>
+              <view class="price">￥{{item.cardPrice}}</view>
+              <view class="tobuy">已过期</view>
+            </view>
+            <view class='float-left uestime'>有效期：2018-04-03~2018-05-01</view>
+          </view>
+        </view>
+      </view>
+      <block wx:else>
+        <image class='empty' src='../../images/empty.png'></image>
+        <view class='emptyFont'>您没有已过期的卡券</view>
+      </block>
+    </swiper-item>
+  </swiper>
+</view>

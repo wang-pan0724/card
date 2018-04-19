@@ -1,0 +1,29 @@
+<view class="container">
+  <view class='search'>
+    <input placeholder="搜索优惠券" focus="{{focus}}" />
+  </view>
+  <view class="banner">
+    <view class="avata">
+      <image src="../../images/user-banner.png"></image>
+      <view class='userIcon'>
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <p>{{userInfo.nickName}}</p>
+    </view>
+  </view>
+  <view class="viewst">
+    <view class='cardBag' catchtap='goToCardBag'>
+      <image class='left-image' src="../../images/user_ka.png"></image>
+      <view class='bag'>我的卡券包
+        <image class='right-image' src="../../images/icon-arrow.png"></image>
+      </view>
+    </view>
+    <view class='connectUs' bindtap='goToContact'>
+      <image class='left-image' src="../../images/tel.png"></image>
+      <view class='connect'>联系我们
+        <image class='right-image' src="../../images/icon-arrow.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="footer">版权归【卡券钱包】所有</view>

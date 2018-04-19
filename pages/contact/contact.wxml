@@ -1,0 +1,51 @@
+<view class="contact">
+  <!-- 搜索优惠券-->
+  <view class='search'>
+    <input placeholder="搜索优惠券" focus="{{focus}}" />
+  </view>
+
+  <view class="contactImg">
+    <image src='../../images/backImg.png'></image>
+  </view>
+  <view class="location">
+    <image src='../../images/location.png'></image>
+    <span>公司地址：西安市雁塔区科技五路数字大厦</span>
+  </view>
+  <view class="contact_intro">【卡券钱包】作为线上管理平台，可以帮助用户便捷的收集、管理手头的各种卡券，为用户带来真金白银的实惠，同时为线上、线下商户提供发券场景和发券能力，帮助商户曝光品牌，拉新、拉活跃，提高投入产出比，助推营销能力。【卡券钱包】致力于打造良好领券、用券生态圈，做商户和用户连接桥梁，创造多方共赢的平台价值。</view>
+  <view class="advantage">
+    <view class="advTitle">四大优势</view>
+    <ul>
+      <li>
+        <p>- 场景优势</p>
+        <p>
+          随着钱包活跃用户增长，作为一级入口的卡券搭配完善的产品体验，已逐渐形成一个新的消费场景，并培养了一大批忠实卡券用户。
+        </p>
+      </li>
+      <li>
+        <p>- 精准优势</p>
+        <p>
+          坐拥手平台大数据，独享微信钱包、支付、绑定手机号等用户核心数据，让投放变得更精准、有效。
+        </p>
+      </li>
+      <li>
+        <p>- 曝光优势</p>
+        <p>
+          拥有众多用户的入口流量，多渠道联合发券助推高品牌曝光以及高发券量。
+        </p>
+      </li>
+      <li>
+        <p>- 成本优势</p>
+        <p>
+          商户免费入驻，省去宣传投资成本，快速获得目标用户，低投入高回报，马上盈利。
+        </p>
+      </li>
+    </ul>
+  </view>
+
+  <view class="call-us" bindtap="contactUs">
+    <image src='../../images/call.png'></image>
+    <span>
+      <a href="tel:400 8697686">400 8697686</a>
+    </span>
+  </view>
+</view>

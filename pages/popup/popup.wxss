@@ -1,0 +1,121 @@
+/* pages/popup.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  background:rgba(0,0,0,0.4);
+  overflow: hidden;
+  z-index: 99;
+  }
+
+.modal-body{
+  position:relative;
+  height:100%;
+  }
+.close{
+  width: 100%;
+  height: 120rpx;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+  color: #fff;
+}
+.close image{
+  position: absolute;
+  right: 30rpx;
+  height: 80rpx;
+  width: 80rpx;
+  color: #fff;
+}
+.luck{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.prompt{
+   width: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+.card{
+  position: relative;
+  width: 100%;
+  height: 340rpx;
+  background-size: contain;
+  color: #fff;
+}
+
+.card .backgroundImg{
+  width: 100%;
+  height: 340rpx;
+}
+
+.shopInfo{
+  position: absolute;
+  top: 110rpx;
+  z-index: 99;
+  width: 100%;
+  height: 340rpx;
+  text-align: center;
+}
+
+.shopName{
+  font-size: 14px;
+}
+
+.discount{
+  font-size: 20px;
+  height: 75rpx;
+  line-height: 75rpx;
+}
+
+.remark{
+  font-size: 13px;
+  height: 45rpx;
+  line-height: 45rpx;
+}
+
+.checkAndAccept{
+  position: relative;
+  font-size: 13px;
+  width: 300rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #C52116;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25rpx;
+  margin-top: 10rpx;
+}
+
+.touse{
+  position: relative;
+  width: 545rpx;
+  height: 108rpx;
+  border: 4px solid #FFB33B;
+  background: #FFDE3B;
+  border-radius: 55rpx;
+  margin-top:80rpx;
+  color: #C17702;
+  font-weight: bold;
+}
+
+.share{
+  width: 545rpx;
+  height: 108rpx;
+  border: 4px solid #DD3227;
+  background: #F55A43;
+  border-radius: 55rpx;
+  margin-top:35rpx;
+  color: #C52116;
+  font-weight: bold;
+}

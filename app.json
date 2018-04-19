@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/popup/popup",
+    "pages/purchaseSuccess/purchaseSuccess",
+    "pages/buy/buy",
+    "pages/businessAll/businessAll",
+    "pages/personal/personal",
+    "pages/enter/enter",
+    "pages/cardBag/cardBag",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EBEBEB",
+    "navigationBarTitleText": "卡券钱包",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#618DFC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商家中心",
+        "iconPath": "images/pic-shop.png",
+        "selectedIconPath": "images/pic-shopSelect.png"
+      },
+      {
+        "pagePath": "pages/cardBag/cardBag",
+        "text": "卡券包",
+        "iconPath": "images/no-ka.png",
+        "selectedIconPath": "images/icon-quan.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "images/no-user.png",
+        "selectedIconPath": "images/icon-user.png"
+      }
+    ]
+  }
+}

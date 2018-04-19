@@ -1,0 +1,9 @@
+<view class='container'>
+ <view class='successImg'>
+  <image class='success' src='../../images/success.png'></image>
+ </view>
+ <view class='prompt'>恭喜您成功购买5折卡券</view>
+ <view class='checkAndAccept'>请到我的卡券包查收</view>
+ <button class='touse'>立即使用</button>
+ <button class='share'>喊小伙伴一起买</button>
+</view>

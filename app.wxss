@@ -1,0 +1,36 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+} 
+
+
+.search{
+  width: 100%;
+  height: 70rpx;
+  background: #EBEBEB;
+}
+
+.search input{
+  width: 90%;
+  height: 55rpx;
+  margin: 0px auto;
+  background: #ffffff;
+  border-radius: 30rpx;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.footer{
+    position: relative;
+    bottom: 100rpx;
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 13px;
+    color: #888888;
+}

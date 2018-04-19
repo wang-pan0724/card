@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 搜索优惠券-->
+  <view class='search'>
+    <input placeholder="搜索优惠券" focus="{{focus}}" />
+  </view>
+
+  <view class="title">
+    <view class="titleImg">
+      <image mode='aspectFill' src="{{shopInfo.titleImg}}"></image>
+    </view>
+    <view class="icon">
+      <image src="{{shopInfo.shopIcon}}"></image>
+    </view>
+    <view class="introduce">{{shopInfo.shopIntroduce}}</view>
+  </view>
+
+  <view class="telAndLoc">
+    <view class="redBar"></view>
+    <view class="call">
+      <view class="loc">
+        商家地址：
+        <span>{{shopInfo.shopAddress}}</span>
+        <image bindtap="gomap" style='float:right' src='../../images/loc-pic.png'></image>
+      </view>
+      <view class="tel">
+        联系电话：
+        <span>{{shopInfo.shopPhoneNumber}}</span>
+        <image bindtap="call" style='float:right' src='../../images/card-call.png'></image>
+      </view>
+    </view>
+  </view>
+  <view hidden="{{huodongImg.show}}" class='jingxuan'>
+    <view class="tit">活动图</view>
+    <view class='jingxuanImg'>
+      <image mode="aspectFit" src="{{huodongImg.url}}"></image>
+    </view>
+  </view>
+
+  <view class="huodong">
+    <view class="tit">精选活动</view>
+    <view class="bangdan">
+      <view class="float-left xingyun">
+        <image src='../../images/pic-xingyun.png'></image>
+      </view>
+      <view class='float-left bangdan-detail'>
+        <swiper class='bangdan-detail swiper-no-swiping' indicator-dots="{{false}}" autoplay="true" interval="2000" duration="1000">
+          <swiper-item wx:for="{{slideUser}}" wx:key="{{index}}">
+            恭喜
+            <span>【{{item.userName}}用户】</span>1元抽中四方凳串串屋（高新店）5折卡
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+    <view class="huodong-list">
+      <view  catchtap='tobuyCardTap' class="list" wx:for="{{cardInfo}}" wx:key="{{index}}" style='background-image:url("../../images/card.png")'>
+        <view class="float-left list-img">
+          <image src='../../images/pic-youhui.png' class='list-titleImg'></image>
+        </view>
+        <view class="float-left list-intr">
+          <view>{{item.cardPrice}}元开运</view>
+          <p class="list-title">{{item.shopName}}</p>
+          <p class="limit">{{item.promptInfo}}</p>
+        </view>
+        <view class="float-right list-buy">
+          <view class="leave">剩{{item.cardNum}}张</view>
+          <view class="tobuy">开运</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view catchtap='tobuyCardTap' class="youhui">
+    <view class="tit">精选优惠</view>
+    <view class="list" wx:for="{{favourable}}" wx:key="{{index}}">
+      <view class="float-left youhui-intr">
+        <view class='name'>{{item.shopName}}</view>
+        <view class="limit">{{item.promptInfo}}</view>
+        <view class="beizhu">备注：{{item.remarkInfo}}</view>
+      </view>
+      <view class="float-right list-buy" style='background: url(../../images/red.png)'>
+        <view class="price">￥{{item.cardPrice}}</view>
+        <view class="tobuy">立即购买</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="footer">版权归【卡券钱包】所有</view>

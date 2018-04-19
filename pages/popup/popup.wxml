@@ -1,0 +1,23 @@
+<!--pages/popup.wxml-->
+
+<view class="modal-box">
+  <view class='close'>
+    <image src='../../images/close.png'  bindtap="onTap"></image>
+  </view>
+  <view class='luck'>您的运气爆棚</view>
+  <view class='prompt'>恭喜获得
+    <text>5折</text>卡券</view>
+  <view class='card'>
+    <image class='backgroundImg' src='../../images/pic-sur.png'></image>
+    <view class='shopInfo'>
+      <view class='shopName'>店铺名称</view>
+      <view class='discount'>5折</view>
+      <view class='remark'>-- 酒水除外 --</view>
+      <view class='checkAndAccept'>请到我的卡券包查收</view>
+    </view>
+  </view>
+  <view>
+    <button class='touse'>立即使用</button>
+    <button class='share'>喊小伙伴一起买</button>
+  </view>
+</view>

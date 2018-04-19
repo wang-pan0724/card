@@ -1,0 +1,15 @@
+<!--pages/buy.wxml-->
+<view class="container">
+  <view class="pic">
+    <image src='../../images/pic-detail.png'></image>
+    <view class="info">
+      <p class="goodsName">商品名称</p>
+      <p class="money">¥100元</p>
+    </view>
+  </view>
+  <button class='topay' bindtap='pay'>微信支付</button>
+  <view class='detail'>
+    <view>说明：<p>酒水不参与活动</p> </view>
+    <view>时间：<p>2018.2.14-2018.3.14</p></view>
+  </view>
+</view>

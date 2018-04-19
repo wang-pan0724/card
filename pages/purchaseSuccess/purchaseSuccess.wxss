@@ -1,0 +1,50 @@
+.successImg{
+  width: 100%;
+  height: 395rpx;
+}
+.success{
+  position: relative;
+  width: 175rpx;
+  height: 175rpx;
+  top: 220rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prompt{
+  position: relative;
+  margin-top: 70rpx;
+  text-align: center;
+  height: 65rpx;
+  line-height: 65rpx;
+  font-size: 16px;
+}
+
+.checkAndAccept{
+  position: relative;
+  text-align: center;
+  height: 55rpx;
+  line-height: 55rpx;
+  font-size: 14px;
+  color: #9C9C9C;
+}
+
+
+.touse{
+  position: relative;
+  width: 545rpx;
+  height: 108rpx;
+  border: 4px solid #FFB33B;
+  background: #FFDE3B;
+  border-radius: 55rpx;
+  margin-top:65rpx;
+}
+
+.share{
+  width: 545rpx;
+  height: 108rpx;
+  border: 4px solid #DD3227;
+  background: #F55A43;
+  border-radius: 55rpx;
+  margin-top:35rpx;
+}
